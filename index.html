@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/css/output.css"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Podcast</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/css/output.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Podcast</title>
 </head>
+
 <body class="bg-stone-300">
   <nav class="flex relative container mx-10 p-4 md:mx-auto md:items-center md:justify-center">
     <div class="flex items-center justify-between">
       <div class="flex space-x-8 md:gap-20 md:items-center md:justify-center">
         <a href="#" class="hover:text-darkGrayishBlue pt-4 md:text-xl">About</a>
         <a href="#" class="hover:text-darkGrayishBlue pt-4 md:text-xl">Services</a>
-        <a class="text-blue-900 font-bold text-2xl md:text-3xl">JIGYASA</a> 
+        <a class="text-blue-900 font-bold text-2xl md:text-3xl">JIGYASA</a>
         <a href="#" class="hover:text-darkGrayishBlue pt-4 md:text-xl">Hackathon</a>
         <a href="#" class="hover:text-darkGrayishBlue pt-4 md:text-xl">Hiring</a>
       </div>
@@ -30,26 +32,79 @@
     <img class="absolute top-20 right-10 " src="/img/right arrow.png" height="200px" width="80px">
     <h1 class="absolute text-5xl font-bold top-30 left-24">PARAS</h1>
     <h1 class="absolute text-5xl font-bold top-30 right-24">ARYAN</h1>
-    <h2 class="absolute md:text-3xl top-52">________________________________________________________________________</h2>  
   </div>
-  <section class="pt-28" id="features">
+  <section class="pt-14 px-4" id="features">
+    <div class="mx-auto border-b-2 border-black pb-10 max-w-5xl w-full px-4"></div>
     <div class=" relative max-w-4xl flex px-10 mx-auto mb-10 md-space-y-0 md:flex-row gap-32 ">
       <div class="flex space-y-12 w-4/5">
-        <p class="text-left text-darkGrayishBlue">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus laboriosam eum deserunt dicta eos sapiente vitae repellat quis nihil omnis est nostrum sint quo provident, saepe minima! Maxime, earum corrupti. 
+        <p class="text-left text-darkGrayishBlue pt-5">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus laboriosam eum deserunt dicta eos
+          sapiente vitae repellat quis nihil omnis est nostrum sint quo provident, saepe minima! Maxime, earum corrupti.
         </p>
       </div>
-      <div class="flex space-y-8 w-1/5"> <a href="#">
-        <h2 class="absolute right-0 top-0 underline">Join Now</h2>
-        <img class="absolute w-24 top-0" src="img/headphone.png">
-        <img class="absolute w-8 right-[4.5rem] top-0" src="img/mini arrow.png"> </a>
+      <div class="flex space-y-8 w-1/5 mx-auto px-4"> <a href="#">
+          <div class="relative h-20 w-20 shrink-0">
+            <h2 class="absolute -right-20 top-0 font-bold text-blue-900">Join Now</h2>
+            <img class="absolute w-24 top-0" src="img/headphone.png">
+            <img class="absolute w-6 -right-2 top-1" src="img/mini arrow.png">
+        </a>
       </div>
     </div>
+    </div>
   </section>
+  <!-- Grid sect -->
   <section class="pt-16">
-    <div class="max-w-6xl px-5 mx-auto mt-24 text-center bg-black">
-      <div class="flex flex-col mt-24 md:flex-row md:space-x-6"></div>
+    <div class="grid h-96 max-w-4xl m-auto p-2 grid-cols-5 gap-2">
+      <div class="grid grid-rows-2 gap-2 col-span-3">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="bg-lime-400 rounded-2xl flex flex-col"> 
+            <div class="flex p-4">
+              <div class="flex p-2 text-black rounded-full baseline border border-black font-bold gap-2">
+                <div class="w-5 h-5 rounded-full bg-black mt-0.5"></div><div>Episodes</div>
+              </div>
+            </div>
+            <div class="flex items-center flex-1 pb-8 px-5 gap-5">
+              <span class="text-5xl font-bold">10</span>
+              <span>Recorded podcasts in library</span>
+            </div>
+          </div>
+          <div class="bg-gray-600 rounded-2xl">
+            <div class="flex p-4 pb-7">
+              <div class="flex p-2 text-white rounded-full baseline border border-white font-bold gap-2">
+                <div class="w-5 h-5 rounded-full bg-white mt-0.5"></div><div>Views</div>
+              </div>
+            </div>
+            <div class="flex flex-col px-5 text-white text-left">
+              <span>More Than</span>
+              <div>
+                <span class="text-4xl font-bold">1M+ </span>
+                <span>Views</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-blue-900 rounded-2xl">
+          <div class="flex p-4">
+            <div class="flex p-2 text-white font-bold gap-2">
+              <div class="text-3xl">Total Impressions</div>
+            </div>
+          </div>
+          <div class="grid gap-3 col-span-3">
+            <div class="relative grid grid-cols-4 col-span-4 gap-3 px-4 pb-4">
+              <div class="flex flex-col bg-white h-24 rounded-2xl"></div>
+              <div class="flex flex-col bg-white h-24 rounded-2xl"></div>
+              <div class="flex flex-col bg-white h-24 rounded-2xl"></div>
+              <img src="/img/image 14.png" class="absolute w-25 h-32 bottom-3 right-3">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid col-span-2 border border-blue-800 rounded-2xl">
+        <div class="flex p-6 font-bold gap-2">
+          <div class="text-4xl">Services</div>
+        </div>
+      </div>
     </div>
   </section>
 </body>
-</html>  
+</html>
